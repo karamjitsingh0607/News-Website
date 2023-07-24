@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container flex main-nav">
+            <a onclick="reload()" class="Company-logo" href="#">
+                <img src="Images/4aff22e4-01b0-4b12-a74e-25dde9ee633c.jpg" alt="Company logo">
+            </a>
+            <div class="nav-links-search-bar flex">
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li class="hover-links nav-items" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                        <li class="hover-links nav-items" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                        <li class="hover-links nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    </ul>
+                </div>
+                <div class="search-bar flex">
+                    <input id="search-text" class="news-input" type="text" placeholder="eg. Science">
+                    <button id="search-button" class="search-button">Search</button>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hover-links" id="ham-burger-icon"></i>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+    <template id="template-news-cards">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news Image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title" >This is the title</h3>
+                <h6 class="news-source" id="news-source">End gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum harum velit maiores sunt modi accusantium sint voluptas. Corrupti sit iure aspernatur earum doloremque, repudiandae sed similique, maiores fugiat quos hic.</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/aca50b7206.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
